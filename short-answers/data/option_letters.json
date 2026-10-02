@@ -1,0 +1,36 @@
+{
+  "note": "Choice の選択肢に付けた記号と、dataset.json の考えのIDの対応。該当なしを入れた条件では、これに NONE が加わる。",
+  "option_letters": {
+    "q1_fate": {
+      "A": "M_water",
+      "B": "M_hidden",
+      "C": "M_vanish",
+      "D": "correct"
+    },
+    "q2_uniform": {
+      "A": "correct",
+      "B": "M_bottom",
+      "C": "M_top"
+    },
+    "q3_mass": {
+      "A": "M_heavier",
+      "B": "M_lighter",
+      "C": "correct"
+    },
+    "q4_particles": {
+      "A": "M_atoms",
+      "B": "M_molecule",
+      "C": "correct"
+    },
+    "q5_evaporate": {
+      "A": "M_other",
+      "B": "M_nothing",
+      "C": "correct"
+    },
+    "q6_filter": {
+      "A": "M_partial",
+      "B": "correct",
+      "C": "M_trap"
+    }
+  }
+}

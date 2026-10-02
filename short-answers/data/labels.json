@@ -1,0 +1,130 @@
+{
+  "dataset_id": "quiz_part1_v1",
+  "labeled_by": "Claude（著者の確認待ち）。人工解答の暫定ラベル。",
+  "rules": {
+    "same_meaning": "correct・variant・negation は true、wrong・irrelevant は false",
+    "idea": "correct・variant・negation は correct、wrong は各問の誤概念、irrelevant は「該当なし」あり条件で none（なし条件では期待値なし）"
+  },
+  "labels": {
+    "q1_fate-correct": {
+      "same_meaning": true,
+      "idea": "correct"
+    },
+    "q1_fate-variant": {
+      "same_meaning": true,
+      "idea": "correct"
+    },
+    "q1_fate-negation": {
+      "same_meaning": true,
+      "idea": "correct"
+    },
+    "q1_fate-wrong": {
+      "same_meaning": false,
+      "idea": "M_vanish"
+    },
+    "q1_fate-irrelevant": {
+      "same_meaning": false,
+      "idea": "none"
+    },
+    "q2_uniform-correct": {
+      "same_meaning": true,
+      "idea": "correct"
+    },
+    "q2_uniform-variant": {
+      "same_meaning": true,
+      "idea": "correct"
+    },
+    "q2_uniform-negation": {
+      "same_meaning": true,
+      "idea": "correct"
+    },
+    "q2_uniform-wrong": {
+      "same_meaning": false,
+      "idea": "M_bottom"
+    },
+    "q2_uniform-irrelevant": {
+      "same_meaning": false,
+      "idea": "none"
+    },
+    "q3_mass-correct": {
+      "same_meaning": true,
+      "idea": "correct"
+    },
+    "q3_mass-variant": {
+      "same_meaning": true,
+      "idea": "correct"
+    },
+    "q3_mass-negation": {
+      "same_meaning": true,
+      "idea": "correct"
+    },
+    "q3_mass-wrong": {
+      "same_meaning": false,
+      "idea": "M_lighter"
+    },
+    "q3_mass-irrelevant": {
+      "same_meaning": false,
+      "idea": "none"
+    },
+    "q4_particles-correct": {
+      "same_meaning": true,
+      "idea": "correct"
+    },
+    "q4_particles-variant": {
+      "same_meaning": true,
+      "idea": "correct"
+    },
+    "q4_particles-negation": {
+      "same_meaning": true,
+      "idea": "correct"
+    },
+    "q4_particles-wrong": {
+      "same_meaning": false,
+      "idea": "M_atoms"
+    },
+    "q4_particles-irrelevant": {
+      "same_meaning": false,
+      "idea": "none"
+    },
+    "q5_evaporate-correct": {
+      "same_meaning": true,
+      "idea": "correct"
+    },
+    "q5_evaporate-variant": {
+      "same_meaning": true,
+      "idea": "correct"
+    },
+    "q5_evaporate-negation": {
+      "same_meaning": true,
+      "idea": "correct"
+    },
+    "q5_evaporate-wrong": {
+      "same_meaning": false,
+      "idea": "M_nothing"
+    },
+    "q5_evaporate-irrelevant": {
+      "same_meaning": false,
+      "idea": "none"
+    },
+    "q6_filter-correct": {
+      "same_meaning": true,
+      "idea": "correct"
+    },
+    "q6_filter-variant": {
+      "same_meaning": true,
+      "idea": "correct"
+    },
+    "q6_filter-negation": {
+      "same_meaning": true,
+      "idea": "correct"
+    },
+    "q6_filter-wrong": {
+      "same_meaning": false,
+      "idea": "M_trap"
+    },
+    "q6_filter-irrelevant": {
+      "same_meaning": false,
+      "idea": "none"
+    }
+  }
+}

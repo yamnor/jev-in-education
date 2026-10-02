@@ -1,0 +1,257 @@
+{
+  "dataset_id": "quiz_part1_v1",
+  "created": "2026-10-02",
+  "description": "第1回：食塩の溶解についての一問一答（短い自由記述）。人工の解答。期待する判定は labels.json に別に置き、Jevには送らない。",
+  "kinds": [
+    "correct",
+    "variant",
+    "negation",
+    "wrong",
+    "irrelevant"
+  ],
+  "questions": [
+    {
+      "id": "q1_fate",
+      "question": "透明な水に食塩を入れてよくかき混ぜると、食塩の粒が見えなくなりました。このとき食塩はどうなりましたか。",
+      "model_answer": "食塩はなくなっていない。目に見えないほど小さな粒に分かれて、水の中に広がっている。",
+      "ideas": {
+        "correct": "食塩は残っていて、小さな粒になって水全体に広がっている。",
+        "M_vanish": "食塩は消えてなくなった。",
+        "M_water": "食塩は水に変わった、または水と同じものになった。",
+        "M_hidden": "食塩はかたまりのまま、底や水の中に隠れている。"
+      }
+    },
+    {
+      "id": "q2_uniform",
+      "question": "食塩水をよくかき混ぜて、しばらく置きました。容器の上の方と下の方で、食塩水の濃さはどうなっていますか。",
+      "model_answer": "上の方も下の方も、濃さは同じになっている。",
+      "ideas": {
+        "correct": "どこでも同じ濃さになっている。",
+        "M_bottom": "下の方が濃くなっている。",
+        "M_top": "上の方が濃くなっている。"
+      }
+    },
+    {
+      "id": "q3_mass",
+      "question": "水に食塩を入れて、すべて溶かしました。溶かす前の「水と食塩を合わせた質量」と比べて、できた食塩水の質量はどうなりますか。",
+      "model_answer": "変わらない。溶かす前の水と食塩を合わせた質量と同じになる。",
+      "ideas": {
+        "correct": "質量は変わらない。",
+        "M_lighter": "質量は軽くなる。",
+        "M_heavier": "質量は重くなる。"
+      }
+    },
+    {
+      "id": "q4_particles",
+      "question": "水に溶けた食塩は、どのような粒子になって水の中に広がっていますか。",
+      "model_answer": "ナトリウムイオンと塩化物イオン。",
+      "ideas": {
+        "correct": "ナトリウムイオンと塩化物イオン（陽イオンと陰イオン）に分かれている。",
+        "M_molecule": "塩化ナトリウムの分子のままで広がっている。",
+        "M_atoms": "ナトリウムと塩素（原子や、金属ナトリウム・塩素ガス）に分かれている。"
+      }
+    },
+    {
+      "id": "q5_evaporate",
+      "question": "食塩水を加熱して、水をすべて蒸発させると、どうなりますか。",
+      "model_answer": "白い食塩の結晶（固体）が残る。",
+      "ideas": {
+        "correct": "食塩が固体として残る。",
+        "M_nothing": "何も残らない（食塩も一緒に蒸発する）。",
+        "M_other": "食塩とは別の物質が残る。"
+      }
+    },
+    {
+      "id": "q6_filter",
+      "question": "食塩水をろ紙でろ過すると、ろ紙の上に食塩を取り出せますか。",
+      "model_answer": "取り出せない。溶けた食塩の粒は、ろ紙を通り抜ける。",
+      "ideas": {
+        "correct": "取り出せない（溶けた食塩はろ紙を通り抜ける）。",
+        "M_trap": "取り出せる（食塩はろ紙の上に残る）。",
+        "M_partial": "一部だけ取り出せる。"
+      }
+    }
+  ],
+  "answers": [
+    {
+      "answer_id": "q1_fate-correct",
+      "question_id": "q1_fate",
+      "kind": "correct",
+      "text": "食塩は小さな粒になって、水全体に広がっている。"
+    },
+    {
+      "answer_id": "q1_fate-variant",
+      "question_id": "q1_fate",
+      "kind": "variant",
+      "text": "しおはこまかいつぶになって、水ぜんたいにまざってる。"
+    },
+    {
+      "answer_id": "q1_fate-negation",
+      "question_id": "q1_fate",
+      "kind": "negation",
+      "text": "消えてなくなったわけではない。見えないだけで、水の中にある。"
+    },
+    {
+      "answer_id": "q1_fate-wrong",
+      "question_id": "q1_fate",
+      "kind": "wrong",
+      "text": "食塩は水に溶けて消えてしまった。"
+    },
+    {
+      "answer_id": "q1_fate-irrelevant",
+      "question_id": "q1_fate",
+      "kind": "irrelevant",
+      "text": "砂糖も水に溶けると見えなくなる。"
+    },
+    {
+      "answer_id": "q2_uniform-correct",
+      "question_id": "q2_uniform",
+      "kind": "correct",
+      "text": "上も下も同じ濃さ。"
+    },
+    {
+      "answer_id": "q2_uniform-variant",
+      "question_id": "q2_uniform",
+      "kind": "variant",
+      "text": "濃度は均一で、場所による差はない。"
+    },
+    {
+      "answer_id": "q2_uniform-negation",
+      "question_id": "q2_uniform",
+      "kind": "negation",
+      "text": "下の方が濃くなるということはなく、どこも同じ。"
+    },
+    {
+      "answer_id": "q2_uniform-wrong",
+      "question_id": "q2_uniform",
+      "kind": "wrong",
+      "text": "食塩は重いので、下の方が濃くなる。"
+    },
+    {
+      "answer_id": "q2_uniform-irrelevant",
+      "question_id": "q2_uniform",
+      "kind": "irrelevant",
+      "text": "よくかき混ぜることが大切だと思う。"
+    },
+    {
+      "answer_id": "q3_mass-correct",
+      "question_id": "q3_mass",
+      "kind": "correct",
+      "text": "同じになる。"
+    },
+    {
+      "answer_id": "q3_mass-variant",
+      "question_id": "q3_mass",
+      "kind": "variant",
+      "text": "質量は保存される。"
+    },
+    {
+      "answer_id": "q3_mass-negation",
+      "question_id": "q3_mass",
+      "kind": "negation",
+      "text": "軽くなったりはしない。溶かす前と等しい。"
+    },
+    {
+      "answer_id": "q3_mass-wrong",
+      "question_id": "q3_mass",
+      "kind": "wrong",
+      "text": "食塩が見えなくなった分だけ軽くなる。"
+    },
+    {
+      "answer_id": "q3_mass-irrelevant",
+      "question_id": "q3_mass",
+      "kind": "irrelevant",
+      "text": "電子てんびんではかる。"
+    },
+    {
+      "answer_id": "q4_particles-correct",
+      "question_id": "q4_particles",
+      "kind": "correct",
+      "text": "ナトリウムイオンと塩化物イオンに分かれている。"
+    },
+    {
+      "answer_id": "q4_particles-variant",
+      "question_id": "q4_particles",
+      "kind": "variant",
+      "text": "Na⁺ と Cl⁻"
+    },
+    {
+      "answer_id": "q4_particles-negation",
+      "question_id": "q4_particles",
+      "kind": "negation",
+      "text": "塩化ナトリウムのままではなく、陽イオンと陰イオンにばらばらになっている。"
+    },
+    {
+      "answer_id": "q4_particles-wrong",
+      "question_id": "q4_particles",
+      "kind": "wrong",
+      "text": "ナトリウムと塩素に分かれている。"
+    },
+    {
+      "answer_id": "q4_particles-irrelevant",
+      "question_id": "q4_particles",
+      "kind": "irrelevant",
+      "text": "水分子は H₂O です。"
+    },
+    {
+      "answer_id": "q5_evaporate-correct",
+      "question_id": "q5_evaporate",
+      "kind": "correct",
+      "text": "白い食塩の粒が残る。"
+    },
+    {
+      "answer_id": "q5_evaporate-variant",
+      "question_id": "q5_evaporate",
+      "kind": "variant",
+      "text": "NaCl の結晶が析出する。"
+    },
+    {
+      "answer_id": "q5_evaporate-negation",
+      "question_id": "q5_evaporate",
+      "kind": "negation",
+      "text": "食塩まで蒸発してなくなることはなく、白い固体が残る。"
+    },
+    {
+      "answer_id": "q5_evaporate-wrong",
+      "question_id": "q5_evaporate",
+      "kind": "wrong",
+      "text": "水といっしょに食塩も蒸発して、何も残らない。"
+    },
+    {
+      "answer_id": "q5_evaporate-irrelevant",
+      "question_id": "q5_evaporate",
+      "kind": "irrelevant",
+      "text": "加熱するときはやけどに注意する。"
+    },
+    {
+      "answer_id": "q6_filter-correct",
+      "question_id": "q6_filter",
+      "kind": "correct",
+      "text": "取り出せない。食塩はろ紙を通り抜けてしまう。"
+    },
+    {
+      "answer_id": "q6_filter-variant",
+      "question_id": "q6_filter",
+      "kind": "variant",
+      "text": "無理。とけた塩はろ紙のあなよりずっと小さいから、下に落ちる。"
+    },
+    {
+      "answer_id": "q6_filter-negation",
+      "question_id": "q6_filter",
+      "kind": "negation",
+      "text": "ろ紙の上に食塩が残ることはない。"
+    },
+    {
+      "answer_id": "q6_filter-wrong",
+      "question_id": "q6_filter",
+      "kind": "wrong",
+      "text": "ろ紙の上に食塩が残るので、取り出せる。"
+    },
+    {
+      "answer_id": "q6_filter-irrelevant",
+      "question_id": "q6_filter",
+      "kind": "irrelevant",
+      "text": "ろ紙は円すい形に折って使う。"
+    }
+  ]
+}
