@@ -1,6 +1,6 @@
 # 短い答えをJevに読ませた検証
 
-noteの記事「【AI×教育】AIは小テストの解答をどう読み取るか：判断を数値で返すAI「Jev」で試した」（【リンク：note記事のURL】）の補足資料です。
+noteの記事「[【AI×教育】AIは小テストの解答をどう読み取るか：判断を数値で返すAI「Jev」で試した](https://note.com/yamnor/n/n8c396ace9778)」の補足資料です。
 
 ## 検証の概要
 
@@ -26,7 +26,7 @@ noteの記事「【AI×教育】AIは小テストの解答をどう読み取る�
 ## ファイル
 
 - [protocol.txt](protocol.txt)：送信前に固定した仕様、事前の見立て、変更履歴
-- [questions.md](questions.md)：送信した質問文の全文と、問ごとの選択肢
+- [questions.md](questions.md)：送信したプロンプトの全文と、問ごとの選択肢
 - data/
   - [dataset.json](data/dataset.json)：6問の問題、模範解答、考えの選択肢、30の答え
   - [labels.json](data/labels.json)：期待する判定。Jevには送っていない。
